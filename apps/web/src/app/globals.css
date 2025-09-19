@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 230 76% 6%;
+  --foreground: 220 33% 96%;
+  --card: 234 45% 9%;
+  --card-foreground: 220 33% 96%;
+  --popover: 234 45% 9%;
+  --popover-foreground: 220 33% 96%;
+  --muted: 226 36% 16%;
+  --muted-foreground: 217 15% 75%;
+  --border: 226 41% 18%;
+  --input: 226 41% 18%;
+  --ring: 183 70% 62%;
+  --accent: 188 72% 58%;
+  --accent-foreground: 230 76% 8%;
+}
+
+.dark {
+  --background: 230 76% 6%;
+  --foreground: 220 33% 96%;
+  --card: 234 45% 9%;
+  --card-foreground: 220 33% 96%;
+  --popover: 234 45% 9%;
+  --popover-foreground: 220 33% 96%;
+  --muted: 226 36% 16%;
+  --muted-foreground: 217 15% 75%;
+  --border: 226 41% 18%;
+  --input: 226 41% 18%;
+  --ring: 183 70% 62%;
+  --accent: 188 72% 58%;
+  --accent-foreground: 230 76% 8%;
+}
+
+.light {
+  --background: 220 46% 96%;
+  --foreground: 230 60% 10%;
+  --card: 0 0% 100%;
+  --card-foreground: 230 60% 10%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 230 60% 10%;
+  --muted: 220 39% 90%;
+  --muted-foreground: 232 46% 39%;
+  --border: 220 39% 90%;
+  --input: 220 39% 90%;
+  --ring: 188 72% 50%;
+  --accent: 265 84% 81%;
+  --accent-foreground: 256 34% 24%;
+}
+
+* {
+  @apply border-border;
+}
+
+body {
+  @apply min-h-screen bg-background font-sans text-foreground antialiased;
+}
+
+::selection {
+  background: rgba(102, 217, 237, 0.45);
+  color: #050607;
+}
