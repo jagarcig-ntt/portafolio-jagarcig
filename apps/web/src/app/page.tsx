@@ -17,37 +17,37 @@ import {
 const dashboardSections = [
   {
     title: 'Stack & Skills',
-    description: 'Modernización bancaria, GenAI y liderazgo técnico full-stack.',
+    description: 'Núcleo tecnológico y herramientas cloud favoritas.',
     icon: <Code2 className="h-5 w-5" />,
     href: '#skills',
   },
   {
     title: 'Experiencia',
-    description: 'Programas de transformación dirigidos en banca global.',
+    description: 'Liderazgo técnico y entregables clave.',
     icon: <BriefcaseBusiness className="h-5 w-5" />,
     href: '#experience',
   },
   {
     title: 'Proyectos',
-    description: 'Plataformas y aceleradores que pasan del legacy al cloud.',
+    description: 'Casos de estudio con impacto medible.',
     icon: <Sparkles className="h-5 w-5" />,
     href: '#projects',
   },
   {
     title: 'Talks & Artículos',
-    description: 'Conocimiento compartido sobre BIAN, GenAI y escalabilidad.',
+    description: 'Divulgación y comunidad.',
     icon: <Mic className="h-5 w-5" />,
     href: '#talks',
   },
   {
     title: 'Playground',
-    description: 'Labs de automatización, agentes y plantillas IaC.',
+    description: 'Labs, experimentos 3D y motion.',
     icon: <Brain className="h-5 w-5" />,
     href: '#playground',
   },
   {
     title: 'Contacto',
-    description: 'Alineemos tu roadmap de modernización.',
+    description: 'Hablemos de tu próximo reto.',
     icon: <Send className="h-5 w-5" />,
     href: '#contact',
   },
@@ -55,9 +55,6 @@ const dashboardSections = [
 
 const featuredProjects = projects.filter((project) => project.featured);
 const otherProjects = projects.filter((project) => !project.featured);
-const emailLink = profile.links.find((link) => link.platform === 'email');
-const linkedinLink = profile.links.find((link) => link.platform === 'linkedin');
-const phoneLink = profile.links.find((link) => link.platform === 'phone');
 
 export default function HomePage() {
   return (
@@ -80,20 +77,20 @@ export default function HomePage() {
         <header className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
             <h2 id="projects-title" className="font-display text-3xl font-semibold text-white">
-              Programas y aceleradores
+              Proyectos destacados
             </h2>
             <p className="text-sm text-white/70">
-              Modernización bancaria con métricas de negocio y resiliencia operativa.
+              Productos cloud con resultados tangibles y mediciones reales.
             </p>
           </div>
           <div className="flex gap-3 text-sm text-white/70">
             <div className="flex items-center gap-2">
               <span className="h-2 w-2 rounded-full bg-accent-mint" />
-              <span>Producción</span>
+              <span>Live</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="h-2 w-2 rounded-full bg-cloud-lavender" />
-              <span>Playbooks</span>
+              <span>Repositorio</span>
             </div>
           </div>
         </header>
@@ -121,7 +118,7 @@ export default function HomePage() {
             Stack & Skills
           </h2>
           <p className="text-sm text-white/70">
-            Modernización core, integración legacy, liderazgo y delivery continuo.
+            Profundidad en frontend, backend y automatización cloud para productos end-to-end.
           </p>
         </header>
         <div className="grid gap-8 md:grid-cols-2">
@@ -151,7 +148,7 @@ export default function HomePage() {
             Experiencia
           </h2>
           <p className="text-sm text-white/70">
-            Programas de transformación en banca global, de discovery a escalado.
+            Historias de impacto, escalabilidad y liderazgo técnico.
           </p>
         </header>
         <Timeline experiences={experiences} />
@@ -163,7 +160,7 @@ export default function HomePage() {
             Talks & Artículos
           </h2>
           <p className="text-sm text-white/70">
-            Compartiendo aprendizajes sobre BIAN, GenAI y aceleradores de modernización.
+            Compartiendo aprendizajes sobre streaming UX, Postgres y plataformas cloud.
           </p>
         </header>
         <div className="grid gap-6 lg:grid-cols-2">
@@ -231,12 +228,12 @@ export default function HomePage() {
             Playground
           </h2>
           <p className="text-sm text-white/70">
-            Experimentos con agentes, automatización y visualizaciones de impacto para banca.
+            Experimentos WebGL, data viz y prototipos de interacción rápida.
           </p>
         </header>
         <div className="rounded-3xl border border-dashed border-white/10 bg-white/5 p-10 text-white/60 backdrop-blur">
           <p>
-            Próximamente: repositorio de aceleradores GenAI, dashboards de riesgo y pipelines IaC reutilizables para banca.
+            Próximamente: repositorio de experimentos con react-three-fiber, partículas y microservicios serverless.
           </p>
         </div>
       </section>
@@ -249,14 +246,28 @@ export default function HomePage() {
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <div className="space-y-2">
             <h2 id="contact-title" className="font-display text-3xl font-semibold text-white">
-              Diseñemos tu hoja de ruta
+              Construyamos algo brillante
             </h2>
             <p className="text-sm text-white/70">
-              Conversemos sobre modernización core, programas GenAI o aceleradores BIAN listos para escalar.
+              Escríbeme para colaborar en productos cloud, data platforms o experiencias web inmersivas.
             </p>
-            {phoneLink && <p className="text-sm text-white/60">Tel. {phoneLink.label}</p>}
           </div>
           <div className="flex flex-col gap-3 md:flex-row">
             <a
-              href={emailLink?.href ?? 'mailto:jaime.garciagarcia.uk@gmail.com'}
-              className="inline-flex items-center justify-center rounded-full bg-accent-mint px-6 py-3 text-sm font-semibold text-cloud-deep transition hover:bg-accent-mint/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-mi
+              href="mailto:hello@jaime.dev"
+              className="inline-flex items-center justify-center rounded-full bg-accent-mint px-6 py-3 text-sm font-semibold text-cloud-deep transition hover:bg-accent-mint/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-mint"
+            >
+              hello@jaime.dev
+            </a>
+            <a
+              href="https://cal.com/jaime"
+              className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/10 px-6 py-3 text-sm font-semibold text-white transition hover:border-accent-mint focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-mint"
+            >
+              Agenda un 1:1
+            </a>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
