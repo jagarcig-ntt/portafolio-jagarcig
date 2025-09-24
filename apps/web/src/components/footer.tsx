@@ -10,13 +10,15 @@ export function Footer() {
         </p>
         <div className="flex flex-wrap gap-4">
           {profile.links.map((link) => (
-            <Link
+            <a
               key={link.platform + link.href}
               href={link.href}
               className="transition hover:text-accent-mint focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-mint focus-visible:ring-offset-2 focus-visible:ring-offset-cloud-deep"
+              target={link.href.startsWith('http') ? '_blank' : undefined}
+              rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
             >
               {link.label}
-            </Link>
+            </a>
           ))}
         </div>
       </div>
