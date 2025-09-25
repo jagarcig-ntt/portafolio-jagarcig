@@ -17,37 +17,37 @@ import {
 const dashboardSections = [
   {
     title: 'Stack & Skills',
-    description: 'Núcleo tecnológico y herramientas cloud favoritas.',
+    description: 'Core tech stack and cloud tools.',
     icon: <Code2 className="h-5 w-5" />,
     href: '#skills',
   },
   {
-    title: 'Experiencia',
-    description: 'Liderazgo técnico y entregables clave.',
+    title: 'Experience',
+    description: 'Technical leadership and key deliverables.',
     icon: <BriefcaseBusiness className="h-5 w-5" />,
     href: '#experience',
   },
   {
-    title: 'Proyectos',
-    description: 'Casos de estudio con impacto medible.',
+    title: 'Projects',
+    description: 'Case studies with measurable impact.',
     icon: <Sparkles className="h-5 w-5" />,
     href: '#projects',
   },
   {
-    title: 'Talks & Artículos',
-    description: 'Divulgación y comunidad.',
+    title: 'Talks & Articles',
+    description: 'Knowledge sharing and community.',
     icon: <Mic className="h-5 w-5" />,
     href: '#talks',
   },
   {
     title: 'Playground',
-    description: 'Labs, experimentos 3D y motion.',
+    description: 'Labs, 3D experiments and motion.',
     icon: <Brain className="h-5 w-5" />,
     href: '#playground',
   },
   {
-    title: 'Contacto',
-    description: 'Hablemos de tu próximo reto.',
+    title: 'Contact',
+    description: 'Let\'s discuss your next challenge.',
     icon: <Send className="h-5 w-5" />,
     href: '#contact',
   },
@@ -66,7 +66,7 @@ export default function HomePage() {
         className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3"
       >
         <h2 id="dashboard-overview" className="sr-only">
-          Navegación rápida
+          Quick navigation
         </h2>
         {dashboardSections.map((section) => (
           <SectionCard key={section.title} {...section} />
@@ -77,10 +77,10 @@ export default function HomePage() {
         <header className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
             <h2 id="projects-title" className="font-display text-3xl font-semibold text-white">
-              Proyectos destacados
+              Featured Projects
             </h2>
             <p className="text-sm text-white/70">
-              Productos cloud con resultados tangibles y mediciones reales.
+              Cloud products with tangible results and real measurements.
             </p>
           </div>
           <div className="flex gap-3 text-sm text-white/70">
@@ -90,7 +90,7 @@ export default function HomePage() {
             </div>
             <div className="flex items-center gap-2">
               <span className="h-2 w-2 rounded-full bg-cloud-lavender" />
-              <span>Repositorio</span>
+              <span>Repository</span>
             </div>
           </div>
         </header>
@@ -118,7 +118,7 @@ export default function HomePage() {
             Stack & Skills
           </h2>
           <p className="text-sm text-white/70">
-            Profundidad en frontend, backend y automatización cloud para productos end-to-end.
+            Deep expertise in frontend, backend, and cloud automation for end-to-end products.
           </p>
         </header>
         <div className="grid gap-8 md:grid-cols-2">
@@ -145,10 +145,10 @@ export default function HomePage() {
       >
         <header className="space-y-2">
           <h2 id="experience-title" className="font-display text-3xl font-semibold text-white">
-            Experiencia
+            Experience
           </h2>
           <p className="text-sm text-white/70">
-            Historias de impacto, escalabilidad y liderazgo técnico.
+            Stories of impact, scalability, and technical leadership.
           </p>
         </header>
         <Timeline experiences={experiences} />
@@ -157,15 +157,15 @@ export default function HomePage() {
       <section id="talks" aria-labelledby="talks-title" className="mt-20 space-y-10">
         <header className="space-y-2">
           <h2 id="talks-title" className="font-display text-3xl font-semibold text-white">
-            Talks & Artículos
+            Talks & Articles
           </h2>
           <p className="text-sm text-white/70">
-            Compartiendo aprendizajes sobre streaming UX, Postgres y plataformas cloud.
+            Sharing learnings about UX, PostgreSQL, and cloud platforms.
           </p>
         </header>
         <div className="grid gap-6 lg:grid-cols-2">
           <article className="rounded-3xl border border-white/10 bg-white/5 p-6 text-white shadow-glass backdrop-blur">
-            <h3 className="text-lg font-semibold">Talks recientes</h3>
+            <h3 className="text-lg font-semibold">Recent Talks</h3>
             <ul className="mt-4 space-y-3 text-sm text-white/70">
               {talks.map((talk) => (
                 <li key={talk.id} className="flex flex-col gap-1">
@@ -185,7 +185,7 @@ export default function HomePage() {
             </ul>
           </article>
           <article className="rounded-3xl border border-white/10 bg-white/5 p-6 text-white shadow-glass backdrop-blur">
-            <h3 className="text-lg font-semibold">Artículos</h3>
+            <h3 className="text-lg font-semibold">Articles</h3>
             <ul className="mt-4 space-y-3 text-sm text-white/70">
               {articles.map((article) => (
                 <li key={article.id} className="flex flex-col gap-1">
@@ -197,7 +197,7 @@ export default function HomePage() {
                   </a>
                   <div className="flex flex-wrap items-center gap-3 text-xs uppercase tracking-wide text-white/50">
                     <span>
-                      {new Date(article.publishedAt).toLocaleDateString('es-ES', {
+                      {new Date(article.publishedAt).toLocaleDateString('en-US', {
                         month: 'short',
                         year: 'numeric',
                       })}
@@ -228,12 +228,12 @@ export default function HomePage() {
             Playground
           </h2>
           <p className="text-sm text-white/70">
-            Experimentos WebGL, data viz y prototipos de interacción rápida.
+            WebGL experiments, data viz, and rapid interaction prototypes.
           </p>
         </header>
         <div className="rounded-3xl border border-dashed border-white/10 bg-white/5 p-10 text-white/60 backdrop-blur">
           <p>
-            Próximamente: repositorio de experimentos con react-three-fiber, partículas y microservicios serverless.
+            Coming soon: repository of experiments with react-three-fiber, particles, and serverless microservices.
           </p>
         </div>
       </section>
@@ -246,10 +246,10 @@ export default function HomePage() {
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <div className="space-y-2">
             <h2 id="contact-title" className="font-display text-3xl font-semibold text-white">
-              Construyamos algo brillante
+              Let's build something brilliant
             </h2>
             <p className="text-sm text-white/70">
-              Escríbeme para colaborar en productos cloud, data platforms o experiencias web inmersivas.
+              Reach out to collaborate on cloud products, data platforms, or immersive web experiences.
             </p>
           </div>
           <div className="flex flex-col gap-3 md:flex-row">
@@ -263,7 +263,7 @@ export default function HomePage() {
               href="https://cal.com/jaime"
               className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/10 px-6 py-3 text-sm font-semibold text-white transition hover:border-accent-mint focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-mint"
             >
-              Agenda un 1:1
+              Schedule a 1:1
             </a>
           </div>
         </div>

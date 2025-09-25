@@ -6,7 +6,7 @@ export function Footer() {
     <footer className="mt-16 border-t border-white/10 pt-8 text-sm text-white/60" id="contact">
       <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
         <p>
-          © {new Date().getFullYear()} {profile.name}. Modernización bancaria con IA responsable.
+          © {new Date().getFullYear()} {profile.name}. Banking modernization with responsible AI.
         </p>
         <div className="flex flex-wrap gap-4">
           {profile.links.map((link) => (

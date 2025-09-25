@@ -10,17 +10,17 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'sw
 const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-space-grotesk', display: 'swap' });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://cv.jaime.dev'),
-  title: 'Jaime García · Full-Stack Engineer',
+  metadataBase: new URL('https://jagarcig.com'),
+  title: 'Jaime García · Senior Technical Lead & Banking Modernization Expert',
   description:
-    'Portfolio de Jaime García, Full-Stack Engineer especializado en React, TypeScript, y plataformas cloud con Postgres.',
+    'Portfolio of Jaime García, Senior Technical Lead specializing in banking modernization, GenAI platforms, and cloud-native microservices with React, TypeScript, and PostgreSQL.',
   openGraph: {
-    title: 'Jaime García · Full-Stack Engineer',
+    title: 'Jaime García · Senior Technical Lead & Banking Modernization Expert',
     description:
-      'Portfolio de Jaime García, Full-Stack Engineer especializado en React, TypeScript, y plataformas cloud con Postgres.',
-    url: 'https://cv.jaime.dev',
+      'Portfolio of Jaime García, Senior Technical Lead specializing in banking modernization, GenAI platforms, and cloud-native microservices with React, TypeScript, and PostgreSQL.',
+    url: 'https://jagarcig.com',
     siteName: 'Jaime García',
-    locale: 'es_ES',
+    locale: 'en_US',
     type: 'website',
   },
   twitter: {
@@ -35,7 +35,7 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="es" suppressHydrationWarning className={`${inter.variable} ${spaceGrotesk.variable}`}>
+    <html lang="en" suppressHydrationWarning className={`${inter.variable} ${spaceGrotesk.variable}`}>
       <body className="relative overflow-x-hidden">
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} storageKey="jaime-theme">
           <AnimatedBackground />
