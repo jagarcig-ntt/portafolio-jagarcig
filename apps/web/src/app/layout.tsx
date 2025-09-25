@@ -37,7 +37,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning className={`${inter.variable} ${spaceGrotesk.variable}`}>
       <body className="relative overflow-x-hidden">
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} storageKey="jaime-theme">
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem={true} storageKey="jaime-theme">
           <AnimatedBackground />
           <div className="relative mx-auto flex min-h-screen w-full max-w-6xl flex-col px-4 pb-12 sm:px-8">
             <Header />

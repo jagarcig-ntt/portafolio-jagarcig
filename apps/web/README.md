@@ -1,11 +1,15 @@
 # Jaime García · Portfolio Web
 
-Portal cloud-native construido con Next.js 14 (App Router), TailwindCSS, shadcn/ui y Framer Motion para presentar el perfil full-stack de Jaime García.
+Portal cloud-native construido con Next.js 14 (App Router), TailwindCSS, shadcn/ui y Framer Motion para presentar el perfil full-stack de Jaime García, especializado en modernización de aplicaciones bancarias.
+
+## 🌐 En vivo
+- **Producción**: [jagarcig.com](https://jagarcig.com)
+- **Repositorio**: [jagarcig-ntt/portafolio-jagarcig](https://github.com/jagarcig-ntt/portafolio-jagarcig)
 
 ## Tecnologías clave
 - **Next.js 14 App Router** para SSR/SSG, optimización de imágenes y rutas API.
-- **TailwindCSS + tokens custom** con glassmorphism y modo oscuro.
-- **shadcn/ui primitives** (Button, Badge) y accesibilidad Radix.
+- **TailwindCSS + tokens custom** con sistema de temas mejorado y modo oscuro.
+- **shadcn/ui primitives** (Button, Badge) con mejoras de accesibilidad y contraste.
 - **Framer Motion** para microinteracciones y animaciones fluidas.
 - **Vitest + Testing Library** para tests de componentes.
 
@@ -25,9 +29,11 @@ pnpm test             # tests con Vitest
 - `POST /api/contact` simula recepción de leads (`202 Accepted`).
 
 ## Theming y accesibilidad
-- Variables CSS (`--background`, `--foreground`, etc.) gestionan modo claro/oscuro.
-- `ThemeProvider` persiste la preferencia (`localStorage`).
-- Componentes incluyen `focus-visible` y contrastes AA.
+- **Sistema de temas mejorado**: Variables CSS optimizadas para mejor contraste en modo claro.
+- **ThemeProvider avanzado**: Persiste preferencias con `localStorage` y detección automática.
+- **Componentes UI mejorados**: Badges con bordes visibles, mejor contraste y accesibilidad AA.
+- **Header inteligente**: Auto-ocultado durante scroll para mejor UX de lectura.
+- **Micro-interacciones**: Transiciones suaves y estados de hover consistentes.
 
 ## Modelo de datos (Postgres · esquema base)
 ```
@@ -56,18 +62,26 @@ article(id PK, title, published_at, summary, canonical_url)
 - Fallback estático cuando `prefers-reduced-motion` está activo.
 - Espacio para integrar `react-three-fiber` o shaders ligeros (`/components/animated-background.tsx`).
 
-## Despliegue recomendado
-- **Vercel** para frontend (variables: `NEXT_PUBLIC_SITE_URL`, `NEXT_PUBLIC_ANALYTICS_ID`, `RESEND_API_KEY`, `SENTRY_DSN`, etc.).
+## Despliegue
+- **Cloudflare Pages** (Actual): Despliegue estático con dominio personalizado `jagarcig.com`
+  - Build command: `cd apps/web && npm run build`
+  - Output directory: `apps/web/out`
+  - Configuración: Static export con `output: 'export'`
+- **Alternativa Vercel**: Variables recomendadas (`NEXT_PUBLIC_SITE_URL`, `RESEND_API_KEY`, etc.)
 - Backend futuro en **Supabase / Neon + Prisma**; exponer `DATABASE_URL` y `DIRECT_URL`.
-- Añadir `VERCEL_ANALYTICS_ID` si se usa la integración nativa.
 
 ## Backlog
-### MVP
+### MVP ✅ Completado
 - [x] Layout App Router con Hero, grid de secciones y proyectos.
 - [x] Fixtures tipados + rutas API mock.
-- [x] Theming oscuro/claro con persistencia.
+- [x] **Sistema de temas mejorado** con mejor contraste y accesibilidad.
+- [x] **Header inteligente** con auto-ocultado durante scroll.
+- [x] **Badges mejorados** con bordes visibles y mejor contraste.
+- [x] **Organización de contenido** optimizada sin justificación de texto.
+- [x] **Mensaje de bienvenida** enfocado en especialización bancaria.
 - [x] Animaciones Framer Motion y tarjetas glassmorphism.
 - [x] Test inicial de Hero con Vitest.
+- [x] **Despliegue en producción** en Cloudflare Pages (jagarcig.com).
 
 ### Próximos pasos
 - [ ] Añadir sección About detallada + timeline extendido.

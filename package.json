@@ -7,7 +7,8 @@
     "build": "pnpm --filter web build",
     "start": "pnpm --filter web start",
     "lint": "pnpm --filter web lint",
-    "test": "pnpm --filter web test"
+    "test": "pnpm --filter web test",
+    "deploy": "pnpm build && cd apps/web && zip -r ../../jagarcig-com-deploy.zip out/"
   },
   "devDependencies": {
     "pnpm": "8.15.4"
