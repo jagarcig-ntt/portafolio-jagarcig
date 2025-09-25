@@ -178,21 +178,15 @@ export default function HomePage() {
               Let's build something brilliant
             </h2>
             <p className="text-sm text-white/70">
-              Reach out to collaborate on cloud products, data platforms, or immersive web experiences.
+              Currently exploring new opportunities in fintech, banking modernization, and technical leadership roles that drive real impact.
             </p>
           </div>
           <div className="flex flex-col gap-3 md:flex-row">
             <a
-              href="mailto:hello@jaime.dev"
+              href="mailto:jaime.garciagarcia.uk@gmail.com"
               className="inline-flex items-center justify-center rounded-full bg-accent-mint px-6 py-3 text-sm font-semibold text-cloud-deep transition hover:bg-accent-mint/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-mint"
             >
-              hello@jaime.dev
-            </a>
-            <a
-              href="https://cal.com/jaime"
-              className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/10 px-6 py-3 text-sm font-semibold text-white transition hover:border-accent-mint focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-mint"
-            >
-              Schedule a 1:1
+              jaime.garciagarcia.uk@gmail.com
             </a>
           </div>
         </div>
