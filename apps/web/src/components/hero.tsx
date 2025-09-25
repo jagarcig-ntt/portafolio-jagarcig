@@ -16,16 +16,16 @@ export function Hero() {
     >
       <div className="max-w-xl space-y-6">
         <motion.span
-          className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-medium text-white/90 backdrop-blur"
+          className="inline-flex items-center gap-2 rounded-full border border-border bg-muted px-4 py-2 text-sm font-medium text-muted-foreground backdrop-blur"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
         >
-          <span className="h-2 w-2 rounded-full bg-accent-mint" />
+          <span className="h-2 w-2 rounded-full bg-accent" />
           {role}
         </motion.span>
         <motion.h1
-          className="font-display text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-6xl"
+          className="font-display text-4xl font-semibold tracking-tight text-foreground sm:text-5xl lg:text-6xl"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.35 }}
@@ -33,7 +33,7 @@ export function Hero() {
           {name}
         </motion.h1>
         <motion.p
-          className="text-lg text-white/75"
+          className="text-lg text-muted-foreground"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.45 }}
@@ -49,30 +49,30 @@ export function Hero() {
           <Button
             asChild
             size="lg"
-            className="bg-accent-mint text-cloud-deep hover:bg-accent-mint/90"
+            className="bg-accent text-accent-foreground hover:bg-accent/90"
           >
-            <a href={emailLink?.href ?? '#contact'}>Contactar</a>
+            <a href={emailLink?.href ?? '#contact'}>Contact</a>
           </Button>
           <Button
             asChild
             size="lg"
             variant="ghost"
-            className="border-cloud-sky/50 text-white hover:bg-white/10"
+            className="border-border text-foreground hover:bg-muted"
           >
             <a href="/assets/cv-jaime-garcia.pdf" download>
-              Descargar CV
+              Download CV
             </a>
           </Button>
         </motion.div>
         <motion.ul
-          className="flex flex-wrap gap-6 text-sm text-white/70"
+          className="flex flex-wrap gap-6 text-sm text-muted-foreground"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.65 }}
         >
           {metrics.map((metric) => (
             <li key={metric.label} className="flex flex-col">
-              <span className="text-base font-semibold text-white">{metric.value}</span>
+              <span className="text-base font-semibold text-foreground">{metric.value}</span>
               <span>{metric.label}</span>
             </li>
           ))}
@@ -98,7 +98,7 @@ export function Hero() {
                 priority
               />
             ) : (
-              <div className="flex h-72 w-72 items-center justify-center text-6xl font-semibold text-white/80">
+              <div className="flex h-72 w-72 items-center justify-center text-6xl font-semibold text-muted-foreground">
                 {name.charAt(0)}
               </div>
             )}

@@ -3,7 +3,7 @@ import { profile } from '@/lib/fixtures';
 
 export function Footer() {
   return (
-    <footer className="mt-16 border-t border-white/10 pt-8 text-sm text-white/60" id="contact">
+    <footer className="mt-16 border-t border-border pt-8 text-sm text-muted-foreground" id="contact">
       <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
         <p>
           © {new Date().getFullYear()} {profile.name}. Banking modernization with responsible AI.

@@ -6,33 +6,33 @@ interface TimelineProps {
 
 export function Timeline({ experiences }: TimelineProps) {
   return (
-    <ol className="relative border-l border-white/15 pl-6">
+    <ol className="relative border-l border-border pl-6">
       {experiences.map((experience) => (
         <li key={experience.id} className="mb-8 ml-4">
-          <div className="absolute -left-[11px] flex h-5 w-5 items-center justify-center rounded-full border border-accent-mint bg-cloud-deep">
-            <span className="h-2 w-2 rounded-full bg-accent-mint" />
+          <div className="absolute -left-[11px] flex h-5 w-5 items-center justify-center rounded-full border border-accent bg-background">
+            <span className="h-2 w-2 rounded-full bg-accent" />
           </div>
-          <div className="rounded-3xl border border-white/10 bg-white/5 p-6 text-white shadow-glass backdrop-blur">
+          <div className="rounded-3xl border border-border bg-card p-6 text-card-foreground shadow-glass backdrop-blur">
             <div className="flex flex-wrap items-center justify-between gap-2">
               <div>
                 <h3 className="text-lg font-semibold">{experience.role}</h3>
-                <p className="text-sm text-white/70">{experience.company}</p>
+                <p className="text-sm text-muted-foreground">{experience.company}</p>
               </div>
-              <p className="text-xs uppercase tracking-wide text-white/50">
+              <p className="text-xs uppercase tracking-wide text-muted-foreground/70">
                 {formatRange(experience.startDate, experience.endDate)}
               </p>
             </div>
-            <ul className="mt-4 space-y-2 text-sm text-white/70">
+            <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
               {experience.highlights.map((highlight) => (
                 <li key={highlight} className="flex items-start gap-2">
-                  <span className="mt-1 h-2 w-2 rounded-full bg-accent-mint" />
+                  <span className="mt-1 h-2 w-2 rounded-full bg-accent" />
                   <span>{highlight}</span>
                 </li>
               ))}
             </ul>
-            <div className="mt-4 flex flex-wrap gap-2 text-xs uppercase tracking-wide text-white/60">
+            <div className="mt-4 flex flex-wrap gap-2 text-xs uppercase tracking-wide text-muted-foreground/70">
               {experience.tech.map((tech) => (
-                <span key={tech} className="rounded-full border border-white/10 bg-white/5 px-3 py-1">
+                <span key={tech} className="rounded-full border border-border bg-muted px-3 py-1">
                   {tech}
                 </span>
               ))}

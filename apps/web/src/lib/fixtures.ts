@@ -12,7 +12,7 @@ export const profile: Profile = {
   role: 'Senior Technical Lead · Banking Modernization & GenAI',
   location: 'Madrid, Spain',
   summary:
-    'I combine technical leadership with business vision to modernize banking: connecting core systems with cloud microservices, generative AI, and automation to deliver measurable value.',
+    'Throughout my tech consulting career, I have focused on driving meaningful impact and modernization in banking web applications, transforming legacy systems into scalable, user-centered solutions that deliver real business value.',
   availability: 'open',
   photoUrl: '/jaime.jpeg',
   metrics: [
@@ -40,40 +40,39 @@ export const skillCategories: SkillCategory[] = [
     id: 'modernization-leadership',
     title: 'Modernization & Leadership',
     description:
-      'End-to-end technical direction with BIAN standards and GenAI-driven banking transformation programs.',
+      'End-to-end technical direction with BIAN standards and GenAI-driven banking transformation projects.',
     skills: [
       {
         id: 'bank-modernization',
-        name: 'BIAN Strategy & core modernization',
-        level: 5,
+        name: 'BIAN Architecture & core modernization',
+        level: 3,
         stack: 'leadership',
-        years: 5,
+        years: 1,
       },
       {
         id: 'genai-modernization',
-        name: 'GenAI modernization platforms',
+        name: 'GenAI modernization platforms (CbN)',
         level: 4,
         stack: 'ai',
-        years: 3,
+        years: 2,
       },
       {
         id: 'team-leadership',
         name: 'Cross-functional team leadership',
-        level: 5,
+        level: 4,
         stack: 'leadership',
-        years: 7,
+        years: 5,
       },
     ],
   },
   {
-    id: 'cloud-backend',
-    title: 'Cloud & Backend',
-    description: 'Microservices architecture, legacy integration, and scalable deployments.',
+    id: 'operations',
+    title: 'Operations & Continuous Improvement',
+    description: 'Lean methodologies, Jira, and automation for quality delivery.',
     skills: [
-      { id: 'azure-devops', name: 'Azure DevOps', level: 4, stack: 'devops', years: 4 },
-      { id: 'postgresql', name: 'PostgreSQL', level: 4, stack: 'backend', years: 6 },
-      { id: 'java-microservices', name: 'Java microservices', level: 4, stack: 'backend', years: 5 },
-      { id: 'integration', name: 'Mainframe & API integration', level: 4, stack: 'backend', years: 4 },
+      { id: 'lean', name: 'Lean & continuous improvement', level: 5, stack: 'consulting', years: 7 },
+      { id: 'jira', name: 'Project management with Jira', level: 5, stack: 'product', years: 6 },
+      { id: 'mentoring', name: 'Technical mentoring & coaching', level: 5, stack: 'leadership', years: 6 },
     ],
   },
   {
@@ -82,21 +81,23 @@ export const skillCategories: SkillCategory[] = [
     description: 'Secure and accessible banking interfaces, aligned with business needs.',
     skills: [
       { id: 'typescript', name: 'TypeScript', level: 4, stack: 'frontend', years: 5 },
-      { id: 'liferay', name: 'LifeRay', level: 4, stack: 'frontend', years: 3 },
+      { id: 'liferay', name: 'LifeRay', level: 3, stack: 'frontend', years: 3 },
       { id: 'react', name: 'React', level: 4, stack: 'frontend', years: 4 },
       { id: 'ux-collaboration', name: 'UX & stakeholder collaboration', level: 5, stack: 'product', years: 7 },
     ],
   },
   {
-    id: 'operations',
-    title: 'Operations & Continuous Improvement',
-    description: 'Lean methodologies, Jira, and automation for quality delivery.',
+    id: 'cloud-backend',
+    title: 'Cloud & Backend',
+    description: 'Microservices architecture, legacy integration, and scalable deployments.',
     skills: [
-      { id: 'lean', name: 'Lean & continuous improvement', level: 4, stack: 'consulting', years: 4 },
-      { id: 'jira', name: 'Project management with Jira', level: 4, stack: 'product', years: 5 },
-      { id: 'mentoring', name: 'Technical mentoring & coaching', level: 5, stack: 'leadership', years: 6 },
+      { id: 'azure-devops', name: 'Azure DevOps', level: 3, stack: 'devops', years: 2},
+      { id: 'postgresql', name: 'PostgreSQL', level: 3, stack: 'backend', years: 5 },
+      { id: 'java-microservices', name: 'Java microservices', level: 3, stack: 'backend', years: 3 },
+      { id: 'integration', name: 'Mainframe & API integration', level: 3, stack: 'backend', years: 2 },
     ],
   },
+
 ];
 
 export const experiences: Experience[] = [
@@ -107,9 +108,9 @@ export const experiences: Experience[] = [
     location: 'Madrid, Spain',
     startDate: '2025-07-01',
     highlights: [
-      'Lead cross-functional teams to modernize banking platforms, connecting legacy core systems with cloud-native microservices.',
-      'Designed and launched a GenAI-driven modernization platform aligned with BIAN standards.',
-      'Accelerated the transition from proof-of-concepts to scalable solutions through automation and observability.',
+      'Leading cross-functional teams in banking technology modernization projects, bridging legacy systems with innovative arquitectures.',
+      'Driving initiatives in Generative AI–powered modernization, building platforms that transform legacy architectures into modern, scalable solutions based on BIAN approach.',
+      'AFull-stack technical leadership: defining ux-solutions, guiding development (frontend & backend), deploying in cloud environments, and coordinating delivery with business stakeholders.',
     ],
     tech: ['GenAI', 'BIAN', 'Microservices', 'Azure', 'TypeScript'],
   },
@@ -121,9 +122,9 @@ export const experiences: Experience[] = [
     startDate: '2022-07-01',
     endDate: '2025-07-01',
     highlights: [
-      'Coordinated backend, frontend, and mainframe squads to modernize Allfunds portal without disrupting operations.',
-      'Defined hybrid legacy/cloud architecture ensuring compliance in a highly regulated environment.',
-      'Contributed code in LifeRay frontend and Java APIs to accelerate key deliverables.',
+      'Led coordination between backend (Java microservices), frontend (LifeRay), and mainframe teams to implement key enhancements in Allfunds’ web portal.',
+      'Designed and supervised the technical solution, ensuring seamless integration between legacy systems and modern microservices.',
+      'Contributed with hands-on frontend development tasks to support delivery goals.',
     ],
     tech: ['Java', 'LifeRay', 'Azure DevOps', 'PostgreSQL', 'Mainframe'],
   },
@@ -135,9 +136,9 @@ export const experiences: Experience[] = [
     startDate: '2020-02-01',
     endDate: '2022-07-01',
     highlights: [
-      'Led technical design and functional documentation of end-to-end banking solutions.',
-      'Guided implementation and deployment to multiple environments with quality practices and automation.',
-      'Mentored junior profiles, fostering code review and DevOps best practices.',
+      'Project Leadership: Leading software development projects, collaborating with clients, and assigning tasks to the team.',
+      'Technical Design and Implementation: Designing and implementing software solutions and documentation as Technical Designs, Functional Specification Document including all needs and expectation confirmed during the analysis phase. Supervising and leading implementation of the code to different environments.',
+      'Mentoring and Collaboration: Mentoring junior programmers, participating in code reviews, and promoting collaboration within the team.',
     ],
     tech: ['TypeScript', 'Java', 'SQL', 'Azure DevOps'],
   },
@@ -149,9 +150,9 @@ export const experiences: Experience[] = [
     startDate: '2018-07-01',
     endDate: '2020-02-01',
     highlights: [
-      'Developed new features and optimized existing code for banking platforms.',
-      'Executed unit and integration testing ensuring quality standards.',
-      'Collaborated with business and QA to resolve critical incidents quickly.',
+      'Coding and Development: Write code, develop software solutions, implement new features, fix bugs, and optimize existing code following coding standards and best practices.',
+      'Testing and Debugging: Test software functionality, perform unit testing, integration testing, and assist with system or user acceptance testing. Debug and troubleshoot issues reported during testing or by users to ensure software performs as intended.',
+      'Collaboration and Learning: Collaborate with team members, understand requirements, share progress, and seek guidance. Actively participate in meetings, discussions, and code reviews.',
     ],
     tech: ['Java', 'SQL', 'Testing', 'Scrum'],
   },
@@ -195,7 +196,7 @@ export const projects: Project[] = [
       'Automates legacy functionality discovery and proposes target blueprints through GenAI agents.',
       'Includes operational dashboard with real-time metrics for management and technical teams.',
     ],
-    tags: ['GenAI', 'BIAN', 'Azure', 'TypeScript', 'Microservices'],
+    tags: ['GenAI', 'BIAN', 'Azure', 'TypeScript', 'Microservices', 'CbN'],
     featured: true,
   },
   {
@@ -205,42 +206,8 @@ export const projects: Project[] = [
     highlights: [
       'Coordinated backend, frontend, and core squads to deliver regulated releases on aggressive timelines.',
       'Implemented UX improvements and LifeRay modules ensuring AA accessibility and stable performance.',
-      'Defined Azure DevOps pipelines with automated testing and controlled deployments.',
     ],
     tags: ['LifeRay', 'Java', 'Azure DevOps', 'Microservices'],
     featured: true,
-  },
-  {
-    id: 'legacy-to-cloud-accelerator',
-    name: 'Legacy to Cloud Accelerator',
-    summary: 'Internal toolkit that accelerates migration of legacy banking processes to cloud-native microservices.',
-    highlights: [
-      'IaC templates and migration scripts to standardize multi-environment deployments.',
-      'Banking risk and compliance playbooks aligned with local regulations.',
-      'Repository of reusable frontend components for financial portals.',
-    ],
-    tags: ['DevOps', 'Infra as Code', 'Compliance'],
-    featured: false,
-  },
-];
-
-export const articles: Article[] = [
-  {
-    id: 'modernization-blueprint',
-    title: 'Blueprint for Modernizing Banking with Microservices and BIAN',
-    publishedAt: '2023-09-10',
-    summary:
-      'Five-phase methodology to modernize banking core without disrupting critical operations.',
-    canonicalUrl: 'https://www.nttdata.com/global/es/blog',
-    tags: ['BIAN', 'Banking Modernization', 'Microservices'],
-  },
-  {
-    id: 'genai-banking',
-    title: 'GenAI as a Catalyst for Banking Transformation',
-    publishedAt: '2024-03-08',
-    summary:
-      'Real cases of generative AI accelerating discovery and delivery in modernization programs.',
-    canonicalUrl: 'https://www.nttdata.com/global/es/insights',
-    tags: ['GenAI', 'Digital Transformation', 'Banking'],
-  },
+  }
 ];

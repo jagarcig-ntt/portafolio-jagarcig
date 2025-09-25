@@ -25,7 +25,7 @@ export function ThemeToggle({ className }: ThemeToggleProps) {
     // Return a placeholder with the same dimensions to avoid layout shift
     return (
       <div
-        className={`inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/10 text-white ${className ?? ''}`}
+        className={`inline-flex h-10 w-10 items-center justify-center rounded-full border border-border bg-muted text-foreground ${className ?? ''}`}
       />
     );
   }
@@ -37,7 +37,7 @@ export function ThemeToggle({ className }: ThemeToggleProps) {
     <button
       type="button"
       onClick={() => setTheme(nextTheme)}
-      className={`inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/10 text-white transition hover:border-accent-mint hover:text-accent-mint focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-mint ${className ?? ''}`}
+      className={`inline-flex h-10 w-10 items-center justify-center rounded-full border border-border bg-muted text-foreground transition hover:border-accent hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${className ?? ''}`}
       aria-label="Cambiar tema"
     >
       <span aria-hidden>{isDark ? '☀️' : '🌙'}</span>
