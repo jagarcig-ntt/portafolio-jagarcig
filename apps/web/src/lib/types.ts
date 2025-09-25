@@ -74,15 +74,6 @@ export interface Project {
   coverImage?: string;
 }
 
-export interface Talk {
-  id: string;
-  title: string;
-  event: string;
-  date: string;
-  link?: string;
-  summary: string;
-}
-
 export interface Article {
   id: string;
   title: string;

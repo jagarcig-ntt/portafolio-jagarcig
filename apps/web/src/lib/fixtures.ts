@@ -4,7 +4,6 @@ import type {
   Profile,
   Project,
   SkillCategory,
-  Talk,
 } from './types';
 
 export const profile: Profile = {
@@ -222,17 +221,6 @@ export const projects: Project[] = [
     ],
     tags: ['DevOps', 'Infra as Code', 'Compliance'],
     featured: false,
-  },
-];
-
-export const talks: Talk[] = [
-  {
-    id: 'banking-modernization-summit',
-    title: 'Generative AI Applied to Banking Modernization with BIAN',
-    event: 'NTT DATA Banking Modernization Summit',
-    date: '2024-11-15',
-    link: 'https://www.nttdata.com/',
-    summary: 'How to move from POCs to scalable platforms combining GenAI agents and BIAN architecture.',
   },
 ];
 

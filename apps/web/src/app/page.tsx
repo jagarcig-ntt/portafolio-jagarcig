@@ -11,7 +11,6 @@ import {
   profile,
   projects,
   skillCategories,
-  talks,
 } from '@/lib/fixtures';
 
 const dashboardSections = [
@@ -32,12 +31,6 @@ const dashboardSections = [
     description: 'Case studies with measurable impact.',
     icon: <Sparkles className="h-5 w-5" />,
     href: '#projects',
-  },
-  {
-    title: 'Talks & Articles',
-    description: 'Knowledge sharing and community.',
-    icon: <Mic className="h-5 w-5" />,
-    href: '#talks',
   },
   {
     title: 'Playground',
@@ -152,70 +145,6 @@ export default function HomePage() {
           </p>
         </header>
         <Timeline experiences={experiences} />
-      </section>
-
-      <section id="talks" aria-labelledby="talks-title" className="mt-20 space-y-10">
-        <header className="space-y-2">
-          <h2 id="talks-title" className="font-display text-3xl font-semibold text-white">
-            Talks & Articles
-          </h2>
-          <p className="text-sm text-white/70">
-            Sharing learnings about UX, PostgreSQL, and cloud platforms.
-          </p>
-        </header>
-        <div className="grid gap-6 lg:grid-cols-2">
-          <article className="rounded-3xl border border-white/10 bg-white/5 p-6 text-white shadow-glass backdrop-blur">
-            <h3 className="text-lg font-semibold">Recent Talks</h3>
-            <ul className="mt-4 space-y-3 text-sm text-white/70">
-              {talks.map((talk) => (
-                <li key={talk.id} className="flex flex-col gap-1">
-                  <a
-                    href={talk.link}
-                    className="text-white transition hover:text-accent-mint focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-mint"
-                  >
-                    {talk.title}
-                  </a>
-                  <div className="flex flex-wrap gap-3 text-xs uppercase tracking-wide text-white/50">
-                    <span>{talk.event}</span>
-                    <span>{new Date(talk.date).toLocaleDateString('es-ES', { month: 'short', year: 'numeric' })}</span>
-                  </div>
-                  <p>{talk.summary}</p>
-                </li>
-              ))}
-            </ul>
-          </article>
-          <article className="rounded-3xl border border-white/10 bg-white/5 p-6 text-white shadow-glass backdrop-blur">
-            <h3 className="text-lg font-semibold">Articles</h3>
-            <ul className="mt-4 space-y-3 text-sm text-white/70">
-              {articles.map((article) => (
-                <li key={article.id} className="flex flex-col gap-1">
-                  <a
-                    href={article.canonicalUrl}
-                    className="text-white transition hover:text-accent-mint focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-mint"
-                  >
-                    {article.title}
-                  </a>
-                  <div className="flex flex-wrap items-center gap-3 text-xs uppercase tracking-wide text-white/50">
-                    <span>
-                      {new Date(article.publishedAt).toLocaleDateString('en-US', {
-                        month: 'short',
-                        year: 'numeric',
-                      })}
-                    </span>
-                    <div className="flex gap-2">
-                      {article.tags.map((tag) => (
-                        <Badge key={tag} className="bg-white/10 text-white/70">
-                          {tag}
-                        </Badge>
-                      ))}
-                    </div>
-                  </div>
-                  <p>{article.summary}</p>
-                </li>
-              ))}
-            </ul>
-          </article>
-        </div>
       </section>
 
       <section

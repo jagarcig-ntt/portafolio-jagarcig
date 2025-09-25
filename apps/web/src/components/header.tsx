@@ -8,10 +8,9 @@ import { ThemeToggle } from '@/components/theme-provider';
 const sections = [
   { href: '#home', label: 'Home' },
   { href: '#skills', label: 'Stack' },
-  { href: '#experience', label: 'Experiencia' },
-  { href: '#projects', label: 'Proyectos' },
-  { href: '#talks', label: 'Talks' },
-  { href: '#contact', label: 'Contacto' },
+  { href: '#experience', label: 'Experience' },
+  { href: '#projects', label: 'Projects' },
+  { href: '#contact', label: 'Contact' },
 ];
 
 export function Header() {
