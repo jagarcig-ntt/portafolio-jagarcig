@@ -85,7 +85,7 @@ export const skillCategories: SkillCategory[] = [
 },
   {
     id: 'experience-design',
-    title: 'Stack & Skills',
+    title: 'Tech Stack',
     description: 'Secure and accessible banking interfaces, aligned with business needs.',
     skills: [
       { id: 'typescript', name: 'TypeScript', level: 4, stack: 'backend', years: 5 },
