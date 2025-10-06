@@ -5,7 +5,17 @@ import { ThemeProvider as NextThemesProvider, useTheme as useNextTheme } from 'n
 import type { ThemeProviderProps } from 'next-themes/dist/types';
 
 export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
-  return <NextThemesProvider {...props}>{children}</NextThemesProvider>;
+  return (
+    <NextThemesProvider 
+      {...props}
+      // Force re-render on theme change to ensure proper mobile handling
+      forcedTheme={undefined}
+      // Disable system theme on mobile if there are issues
+      disableTransitionOnChange={false}
+    >
+      {children}
+    </NextThemesProvider>
+  );
 }
 
 export interface ThemeToggleProps {

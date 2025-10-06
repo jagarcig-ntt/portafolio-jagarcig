@@ -42,6 +42,22 @@ body {
   @apply min-h-screen bg-background font-sans text-foreground antialiased;
 }
 
+/* Ensure proper theme application on mobile devices */
+html:not(.dark) {
+  color-scheme: light;
+  background-color: rgb(255 255 255); /* white */
+}
+
+html.dark {
+  color-scheme: dark;
+  background-color: rgb(15 16 20); /* dark background */
+}
+
+/* Force background color inheritance */
+#__next {
+  @apply bg-background;
+}
+
 ::selection {
   background: rgba(102, 217, 237, 0.45);
   color: #050607;
